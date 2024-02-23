@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- TODO: Sett din egen groupID og artifactID -->
-    <groupId>velg.en.fornuftig.groupID</groupId>
+    <groupId>edu.ntnu.iir.cardGame</groupId>
     <artifactId>CardGame</artifactId>
     <version>1.0-SNAPSHOT</version>
 
