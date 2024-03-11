@@ -15,8 +15,47 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!-- TODO: Sett dine dependencies for JavaFX og JUnit5-testing -->
+    <build>
+        <plugins>
+            <!-- Add a newer version of the JUnit test interface surefire, to be compliant with JUnit5 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.3</version>
+            </plugin>
 
-    <!-- TODO: Sett riktig versjon av nødvendige plugins -->
 
+            <!-- Add the JavaFX plugin allowing you to run/execute JavaFX from Maven -->
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <!-- TODO: Set your main class here -->
+                    <mainClass>the-full-path-to-your-main-class</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- Add dependecy to the core-library of JavaFX -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>21.0.1</version>
+        </dependency>
+
+        <!--
+        And of course we need to add support for JUnit5-testing ;-)
+        REMEMBER to add the scope-part!
+        -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.1</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
 </project>
