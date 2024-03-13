@@ -32,7 +32,7 @@
                 <version>0.0.8</version>
                 <configuration>
                     <!-- TODO: Set your main class here -->
-                    <mainClass>the-full-path-to-your-main-class</mainClass>
+                    <mainClass>no.ntnu.idatx2003.oblig3.cardgame.CardGameApp</mainClass>
                 </configuration>
             </plugin>
         </plugins>
