@@ -13,6 +13,11 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import java.util.List;
 
+/**
+ * Represents the main application for the card game.
+ * The main method is the entry point of the application.
+ * @version 1.0.0.
+ */
 
 public class CardGameApp extends Application {
 
